@@ -215,4 +215,7 @@ console.log(
   `Comparando 100 !== "200" (desigualdade estrita): O resultado é ${anotherSecondResult}`
 );
 
-//
+//Operadores lógicos 
+
+let CompareAndOperator = (10 < 100) && (100 < 200); //resultado esperado 'true'
+console.log(`O resultado esperado é true: Verificando ${CompareAndOperator}`);
