@@ -165,3 +165,54 @@ let comparacaoEstrita = codigoProdutoTexto === codigoProdutoNumero;
 console.log(
   `Comparando "150" === 150 (igualdade estrita): ${comparacaoEstrita}`
 );
+
+//Igualdade estrita x Igualdade flexível
+let numberTypeOne = 100;
+let numberTypeTwo = "100";
+
+let resultTypeOne = numberTypeOne == numberTypeTwo; //Converte os tipos antes de comparar
+console.log(
+  `Comparando 100 == "100" (igualdade solta): O resultado é ${resultTypeOne}`
+);
+
+let resultTypeTwo = numberTypeOne === numberTypeTwo; //Não converte os tipos antes de comparar
+console.log(
+  `Comparando 100 === "100" (igualdade estrita): O resultado é ${resultTypeTwo}`
+);
+
+console.log("\n--- Exercício 6: Comparador de Ingressos ---");
+let ingressoNaLista = 582;
+let ingressoDigitado = "582"; //Resultado esperado é True
+
+let comparacaoIngressos = ingressoNaLista == ingressoDigitado;
+console.log(
+  `Comparando 582 == "582" (igualdade solta): O resultado é ${comparacaoIngressos}`
+);
+
+let segundaComparacaoIngressos = ingressoNaLista === ingressoDigitado; //Resultado esperado é false
+console.log(
+  `Comparando 582 === "582" (igualdade estrita): O resultado é: ${segundaComparacaoIngressos}`
+);
+
+/*
+  Reflexão e Conclusão:
+  Para um sistema real, o operador de igualdade estrita (===) é sempre a escolha mais segura e recomendada.
+  Ele evita comportamentos inesperados causados pela conversão automática de tipos (coerção),
+  garantindo que a comparação só seja verdadeira se tanto o valor quanto o tipo forem idênticos.
+  Isso torna o código mais previsível, mais fácil de depurar e menos propenso a bugs.
+*/
+
+//Desigualdade Estrita x Desigualdade Flexível
+let anotherNumberTypeOne = 100;
+let otherNumberTypeTwo = "200";
+let anotherResult = anotherNumberTypeOne != otherNumberTypeTwo; // Resultado esperado true
+console.log(
+  `Comparando 100 != "200" (desigualdade flexível): O resultado é ${anotherResult}`
+);
+
+let anotherSecondResult = anotherNumberTypeOne !== otherNumberTypeTwo; //Resultado esperado true
+console.log(
+  `Comparando 100 !== "200" (desigualdade estrita): O resultado é ${anotherSecondResult}`
+);
+
+//
