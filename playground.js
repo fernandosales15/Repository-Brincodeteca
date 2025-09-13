@@ -215,7 +215,40 @@ console.log(
   `Comparando 100 !== "200" (desigualdade estrita): O resultado é ${anotherSecondResult}`
 );
 
-//Operadores lógicos 
-
-let CompareAndOperator = (10 < 100) && (100 < 200); //resultado esperado 'true'
+//Operadores lógicos
+let CompareAndOperator = 10 < 100 && 100 < 200; //resultado esperado 'true' - As duas precisam ser operações verdadeiras
 console.log(`O resultado esperado é true: Verificando ${CompareAndOperator}`);
+
+let CompareOrOperator = 100 > 50 || 50 < 25; //resultado esperado 'true' - Só uma precisa ser verdeira
+console.log(
+  `O resultado esperado é 'true' - Verificando = ${CompareOrOperator}`
+);
+
+let CompareNotOperator = !(5 < 4); //Resultado esperado é 'true'
+console.log(
+  `O resultado esperado é 'true' - Verificando = ${CompareNotOperator}`
+);
+
+console.log("\n--- Exercício 7: Operadores Lógicos ---");
+
+let usuarioLogado = true;
+let assinaturaPremium = false;
+let ehAdmin = false; // Renomeado para consistência (camelCase) e seguindo a proposta
+
+console.log(
+  `Status inicial: Logado=${usuarioLogado}, Premium=${assinaturaPremium}, Admin=${ehAdmin}`
+);
+
+// A lógica completa combina as duas regras com '||' (OU)
+// Regra 1: (usuário está logado E tem assinatura premium)
+// Regra 2: (usuário é admin)
+let temAcesso = (usuarioLogado && assinaturaPremium) || ehAdmin;
+
+// Agora usamos a variável 'temAcesso' para decidir o que mostrar
+if (temAcesso) {
+  console.log("Resultado: Acesso PERMITIDO! Bem-vindo(a).");
+} else {
+  console.log(
+    "Resultado: Acesso NEGADO. Verifique suas credenciais ou assinatura."
+  );
+}
