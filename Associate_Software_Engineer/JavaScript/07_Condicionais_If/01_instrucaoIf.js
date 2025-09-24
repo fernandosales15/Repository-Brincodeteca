@@ -2,9 +2,14 @@ let idade = 33;
 
 // Para condições que se excluem, a estrutura if...else if é mais indicada.
 // Assim que uma condição verdadeira é encontrada, as outras não são testadas.
-if (idade < 30) {
+// A lógica foi ajustada para cobrir todas as idades.
+if (idade < 33) {
   console.log("Você é Associate Software Engineer");
-} else if (idade >= 33) {
+} else if (idade >= 33 && idade < 40) {
+  // Exemplo de uma faixa para Pleno/Sênior
+  console.log("Você é Pleno/Sênior Software Engineer");
+} else {
+  // Para idades >= 40
   console.log("Você é Staff Software Engineer");
 }
 
