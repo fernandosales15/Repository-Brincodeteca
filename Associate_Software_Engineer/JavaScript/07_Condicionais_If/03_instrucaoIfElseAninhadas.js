@@ -16,3 +16,5 @@ if (idade >= 12) {
     "Acesso Negado. Você não tem a idade mínima para este brinquedo."
   );
 }
+
+
