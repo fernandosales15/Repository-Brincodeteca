@@ -22,3 +22,20 @@ for (i = 0; i <= 1000; i++) {
 }
 
 console.log("---- Fim do Exercicio ---- ") 
+
+console.log(" ---- Iniciando Novo Exercício de Loops - Testando a Instrução 'Continue' ---- ");
+
+let newNumber = 0; 
+
+for (i = 1; i <= 50; i++) {
+    console.log(`Número atual: ${newNumber}`);
+    newNumber += 1;
+
+
+    if (newNumber % 2 != 0) {
+    continue;
+    }
+    console.log(`O número ${newNumber} é par.`);
+}
+
+console.log("---- Fim do Exercício para Teste de Continue ---- ");
