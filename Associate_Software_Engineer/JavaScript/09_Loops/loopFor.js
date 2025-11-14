@@ -28,14 +28,15 @@ console.log(" ---- Iniciando Novo Exercício de Loops - Testando a Instrução '
 let newNumber = 0; 
 
 for (i = 1; i <= 50; i++) {
-    console.log(`Número atual: ${newNumber}`);
-    newNumber += 1;
+    console.log(`Atualmente a variável é: ${newNumber}`);
+    newNumber += 1; 
 
-
-    if (newNumber % 2 != 0) {
-    continue;
+    if (newNumber % 2 === 0) {
+        console.log(`O próximo número é par, será pulado da iteração: ${newNumber}`);
+        continue;
     }
-    console.log(`O número ${newNumber} é par.`);
+    console.log(`Número impar encontrado: ${newNumber}`)
+
 }
 
 console.log("---- Fim do Exercício para Teste de Continue ---- ");
