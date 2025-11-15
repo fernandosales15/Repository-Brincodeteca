@@ -8,3 +8,4 @@ do {
 } while (contador > 0);
 
 console.log(`---- Fim do Exercício de Do While, o Contador chegou ao número esperado de Zero ---- `);
+console.log("Pull Request Test");
